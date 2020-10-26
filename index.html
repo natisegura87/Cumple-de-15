@@ -2,6 +2,29 @@
 <html>
 <head>
 <title>mapa prueba</title>
+
+<script src="https://smtpjs.com/v3/smtp.js"></script>  
+    <script type="text/javascript">
+
+    window.onload = 
+
+        function sendEmail() {
+            Email.send({
+                Host: 'smtp.gmail.com',
+                Username : 'techservbahia@gmail.com',
+                Password : 'mayramarcelo',
+                To : 'techservbahia@gmail.com',
+                From : 'techservbahia@gmail.com,nati.segura87@gmail.com',
+                Subject : 'prueba',
+                Body : 'cuerpo',
+            })
+            .then(function(message){
+                alert("mail sent successfully")
+            });
+        }
+    </script>
+
+    
 <link href="https://fonts.googleapis.com/" rel="stylesheet">
 <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
 <style>
